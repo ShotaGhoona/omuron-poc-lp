@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-omron-blue: #005ED2;
+  --color-omron-dark: #0F4283;
+  --color-omron-navy: #0C3467;
+  --color-omron-light: #EEF5FF;
+  --color-omron-red: #FF6363;
+  --color-omron-text: #303030;
+  --color-omron-gray: #F7F7F7;
+  --color-omron-blue-header: #005EB8;
+  --color-omron-border: #DFDFDF;
+  --color-omron-border-mid: #B2B2B2;
+  --color-omron-border-light: #E8E9E9;
+  --font-body: var(--font-noto-sans-jp), "Noto Sans JP", "ヒラギノ角ゴ Pro W3", sans-serif;
+  --font-display: var(--font-bebas-neue), "Bebas Neue", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: var(--color-omron-text);
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive visibility */
+@media (max-width: 767px) {
+  .nosp {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .nopc {
+    display: none !important;
+  }
+}
+
+/* FAQ toggle plus/minus icon — pseudo-elements hard to replace with JSX */
+.faq-question {
+  position: relative;
+  cursor: pointer;
+}
+.faq-question::before,
+.faq-question::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 3px;
+  background-color: #005ED2;
+  border-radius: 9999px;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+.faq-question::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+.faq-question.is-open::after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+@media (max-width: 767px) {
+  .faq-question::before,
+  .faq-question::after {
+    width: 20px;
+    height: 2px;
+    right: 15px;
+  }
 }

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.omron.com/digital/service/s_LightMES.html -->
+<html lang="ja"><plasmo-csui><template shadowrootmode="open"><style>*,:before,:after,::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border:0 solid #1b1a19}:before,:after{--tw-content:""}html,:host{-webkit-text-size-adjust:100%;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}body{line-height:inherit;margin:0}hr{color:inherit;border-top-width:1px;height:0}abbr:where([title]){text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-feature-settings:normal;font-variation-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-feature-settings:inherit;font-variation-settings:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:#0000;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{margin:0;padding:0;list-style:none}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (width>=640px){.container{max-width:640px}}@media (width>=768px){.container{max-width:768px}}@media (width>=1024px){.container{max-width:1024px}}@media (width>=1280px){.container{max-width:1280px}}@media (width>=1536px){.container{max-width:1536px}}.static{position:static}.absolute{position:absolute}.relative{position:relative}.z-10{z-index:10}.-mb-3\.5{margin-bottom:-.875rem}.mt-8{margin-top:2rem}.box-border{box-sizing:border-box}.inline{display:inline}.flex{display:flex}.h-16{height:4rem}.h-48{height:12rem}.h-\[calc\(100vh-4rem\)\]{height:calc(100vh - 4rem)}.h-full{height:100%}.w-48{width:12rem}.w-60{width:15rem}.flex-none{flex:none}.flex-grow{flex-grow:1}.resize{resize:both}.flex-col{flex-direction:column}.place-content-center{place-content:center}.items-center{align-items:center}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.gap-y-1{row-gap:.25rem}.gap-y-2\.5{row-gap:.625rem}.rounded{border-radius:.25rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-gray-30{--tw-border-opacity:1;border-color:rgb(237 235 233/var(--tw-border-opacity,1))}.border-gray-80{--tw-border-opacity:1;border-color:rgb(179 176 173/var(--tw-border-opacity,1))}.bg-gray-10{--tw-bg-opacity:1;background-color:rgb(250 249 248/var(--tw-bg-opacity,1))}.p-3{padding:.75rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.pl-2{padding-left:.5rem}.pr-2{padding-right:.5rem}.pt-10{padding-top:2.5rem}.pt-4{padding-top:1rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-semibold{font-weight:600}.leading-10{line-height:2.5rem}.text-gray-100{--tw-text-opacity:1;color:rgb(151 149 147/var(--tw-text-opacity,1))}.filter{filter:var(--tw-blur)var(--tw-brightness)var(--tw-contrast)var(--tw-grayscale)var(--tw-hue-rotate)var(--tw-invert)var(--tw-saturate)var(--tw-sepia)var(--tw-drop-shadow)}#plasmo-shadow-container{display:none}.hover\:bg-gray-30:hover{--tw-bg-opacity:1;background-color:rgb(237 235 233/var(--tw-bg-opacity,1))}.hover\:no-underline:hover{text-decoration-line:none}</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"><div class="flex flex-col gap-y-1"><button id="download" title="download" type="button" class="text-xl border box-border border-gray-80 text-gray-100 bg-gray-10 hover:bg-gray-30 rounded"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path d="M11 6.5a5.5 5.5 0 0 1 5-5.478v5.77l-1.646-1.646a.5.5 0 0 0-.708.708l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5a.5.5 0 0 0-.708-.708L17 6.793v-5.77A5.5 5.5 0 1 1 11 6.5zm8.5 3A.5.5 0 0 0 19 9h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zM6.25 4h4.248a6.451 6.451 0 0 0-.422 1.5H6.25A1.75 1.75 0 0 0 4.5 7.25V8h5.674c.125.528.314 1.03.558 1.5H4.5V14h4.558c.382 0 .692.31.692.692v.058a2.25 2.25 0 0 0 4.5 0v-.058c0-.382.31-.692.692-.692H19.5v-1.732A6.518 6.518 0 0 0 21 11.19v7.56A3.25 3.25 0 0 1 17.75 22H6.25A3.25 3.25 0 0 1 3 18.75V7.25A3.25 3.25 0 0 1 6.25 4z" fill="currentColor"></path></g></svg></button><button id="copy" title="copy" type="button" class="text-xl border box-border border-gray-80 text-gray-100 bg-gray-10 hover:bg-gray-30 rounded"><svg width="1em" height="1em" fill="currentColor" class="___12fm75w f1w7gpdv fez10in fg4l7m0" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 6.5V2H7.5C6.67 2 6 2.67 6 3.5v11c0 .83.67 1.5 1.5 1.5h8c.83 0 1.5-.67 1.5-1.5V8h-4.5A1.5 1.5 0 0 1 11 6.5Zm1 0V2.25L16.75 7H12.5a.5.5 0 0 1-.5-.5ZM4 5a1 1 0 0 1 1-1v10.5A2.5 2.5 0 0 0 7.5 17H15a1 1 0 0 1-1 1H7.55A3.55 3.55 0 0 1 4 14.45V5Z" fill="currentColor"></path></svg></button></div></div></div></template></plasmo-csui><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/insight.min.js"></script><script async="" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/clarity.js"></script><script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/banner.js" type="text/javascript" id="cookieBanner-39759793" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="39759793" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/collectedforms.js" type="text/javascript" id="CollectedForms-39759793" crossorigin="anonymous" data-leadin-portal-id="39759793" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="39759793" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/39759793.js" type="text/javascript" id="hs-analytics"></script><script async="" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/qwpw6kh1i1"></script><script type="text/javascript" async="" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/js"></script><script async="" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/gtm.js"></script><script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WNTSJ8SK');
+</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- meta 開始 -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/viewport.js"></script>
+
+
+
+<!-- OGP -->
+<meta property="og:title" content="LightMES（製造実行システム） ｜オムロン デジタル株式会社">
+<meta property="og:description" content="製造現場のデータ活用を通じ、経営目標達成に向けた効率的な製造管理システムを提供。生産と品質をより良く管理し、迅速な機能導入で継続的成長を支援します。">
+<meta property="og:image" content="https://www.omron.com/digital/assets_new/images/common/img_ogp.png">
+<meta property="og:url" content="https://www.omron.com/digital/service/s_LightMES.html">
+
+<meta property="og:type" content="article">
+
+<meta property="og:site_name" content="オムロン デジタル株式会社">
+<meta property="og:locale" content="ja_JP">
+<!-- OGP -->
+<!-- meta 終了 -->
+
+<!-- favicon 開始 -->
+<link rel="icon" type="image/x-icon" href="https://www.omron.com/digital/favicon.ico">
+<link rel="apple-touch-icon" href="https://www.omron.com/digital/assets_new/images/common/apple-touch-icon.png" sizes="152x152">
+<link rel="icon" href="https://www.omron.com/digital/assets_new/images/common/android-chrome.png" sizes="192x192" type="image/png">
+<!-- favicon 終了 -->
+
+    <!-- SEO（TDKC） 開始 -->
+    <link rel="canonical" href="https://www.omron.com/digital/service/s_LightMES.html">
+
+    <title>LightMES（製造実行システム） ｜オムロン デジタル株式会社</title>
+    <meta name="description" content="製造現場のデータ活用を通じ、経営目標達成に向けた効率的な製造管理システムを提供。生産と品質をより良く管理し、迅速な機能導入で継続的成長を支援します。">
+    <meta name="keywords" content="">
+
+    <!-- SEO（TDKC） 終了 -->
+
+    <!-- ページ共通のCSSファイル開始-->
+    <link rel="stylesheet" type="text/css" href="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/base.css" media="all">
+    <!-- ページ共通のCSSファイル終了-->
+
+
+    <!-- ページ固有のCSSファイル開始 -->
+    
+    <link rel="stylesheet" type="text/css" href="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/slick.css" media=" all">
+    
+    <link rel="stylesheet" type="text/css" href="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/service.css" media="all">
+    <!-- ページ固有のCSSファイル終了-->
+
+
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/launch-33a6e729cb8f.min.js" async=""></script>
+
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/AppMeasurement.min.js" async=""></script><script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/AppMeasurement_Module_ActivityMap.min.js" async=""></script><style data-make-styles-bucket="d" data-priority="0"></style><style data-make-styles-bucket="t" data-priority="0"></style></head>
+<body id="pagetop" style="">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTSJ8SK"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="l-header">
+    <div class="l-header-inner">
+        <p class="l-header-logo">
+            <a href="https://www.omron.com/digital/">
+                <img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/logo.svg" alt="オムロン デジタル株式会社 | Japan" width="509" height="31" loading="lazy" decoding="async">
+            </a>
+        </p><!--l-header-logo-->
+
+				<div class="l-header-area">
+			<nav class="l-gnav">
+				<ul class="l-gnav-list-sub nosp">
+
+
+					<li class="l-gnav-item"><a href="https://www.omron.com/digital/recruit/">採用情報</a></li>
+					<li class="l-gnav-item"><a href="https://www.omron.com/digital/product_text/">文字入力技術</a></li>
+		<li class="l-gnav-item l-gnav-item-lang">
+						<button class="l-gnav-item-lang-button">
+							Language
+						</button>
+						<ul class="l-gnav-item-lang-list">
+							<li><a href="https://www.omron.com/digital/en/" class="l-gnav-item-lang-list-link">Global - English</a></li>
+							<li><a href="https://www.omron.com/digital/" class="l-gnav-item-lang-list-link l-gnav-item-lang-list-link-active">Japan - 日本語</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="l-gnav-list">
+					<li class="l-gnav-item"><a href="https://www.omron.com/digital/service/" class="l-gnav-item-link">製品・サービス</a></li>
+					<li class="l-gnav-item is-gnav">
+						<a href="https://www.omron.com/digital/business/" class="l-gnav-item-link">事業紹介</a>
+						<span class="l-gnav-item-link-arrow"></span>
+						<div class="l-gnav-area" style="display: none;">
+							<div class="l-gnav-area-inner">
+								<div class="l-gnav-area-box">
+									<p class="l-gnav-area-ttl">事業紹介</p>
+									<p class="m-neue-regular l-gnav-area-en"><span class="m-col-blue">S</span>OLUTION</p>
+								</div>
+								<ul class="l-gnav-area-list">
+									<li><a href="https://www.omron.com/digital/business/public/" class="l-gnav-area-list-link">社会ソリューション</a></li>
+									<li><a href="https://www.omron.com/digital/business/fa/" class="l-gnav-area-list-link">IAソリューション</a></li>
+									<li><a href="https://www.omron.com/digital/business/efts/" class="l-gnav-area-list-link">EFTSソリューション</a></li>
+									<li><a href="https://www.omron.com/digital/business/financial/" class="l-gnav-area-list-link">金融ソリューション</a></li>
+									<li><a href="https://www.omron.com/digital/business/mobile/" class="l-gnav-area-list-link">UI/UXソリューション</a></li>
+									<li><a href="https://www.omron.com/digital/business/health/" class="l-gnav-area-list-link">健康ソリューション</a></li>
+									<li><a href="https://www.omron.com/digital/business/data/" class="l-gnav-area-list-link">DXソリューション</a></li>
+								</ul>
+							</div><!--l-gnav-area-inner-->
+
+
+						</div><!--l-gnav-area-->
+					</li>
+
+					<li class="l-gnav-item"><a href="https://www.omron.com/digital/vision/" class="l-gnav-item-link">ビジョン</a></li>
+					<!-- <li class="l-gnav-item"><a href="/digital/work/" class="l-gnav-item-link">導入事例</a></li> -->
+					<li class="l-gnav-item is-gnav"><a href="https://www.omron.com/digital/company_info/" class="l-gnav-item-link">会社情報</a>
+						<span class="l-gnav-item-link-arrow"></span>
+						<div class="l-gnav-area" style="display: none;">
+							<div class="l-gnav-area-inner">
+								<div class="l-gnav-area-box">
+									<p class="l-gnav-area-ttl">会社情報</p>
+									<p class="m-neue-regular l-gnav-area-en"><span class="m-col-blue">I</span>NFORMATION</p>
+								</div>
+								<ul class="l-gnav-area-list">
+									<li><a href="https://www.omron.com/digital/company_info/outline/" class="l-gnav-area-list-link">会社概要</a></li>
+									<li><a href="https://www.omron.com/digital/company_info/bossgreeting/" class="l-gnav-area-list-link">社長メッセージ</a></li>
+									<li><a href="https://www.omron.com/jp/ja/about/corporate/vision/philosophy/" class="l-gnav-area-list-link">企業理念</a></li>
+									<li><a href="https://www.omron.com/digital/company_info/history/" class="l-gnav-area-list-link">沿革</a></li>
+									<li><a href="https://www.omron.com/digital/company_info/account/" class="l-gnav-area-list-link">決算報告</a></li>
+                                	<li><a href="https://www.omron.com/digital/vision/" class="l-gnav-area-list-link">ビジョン</a></li>
+								</ul>
+							</div><!--l-gnav-area-inner-->
+
+
+						</div><!--l-gnav-area-->
+					</li>
+					<!-- <li class="l-gnav-item"><a href="/digital/seminar/" class="l-gnav-item-link">セミナー</a></li>
+					<li class="l-gnav-item"><a href="/digital/column/" class="l-gnav-item-link">コラム</a></li> -->
+					<li class="l-gnav-item nopc"><a href="https://www.omron.com/digital/recruit/" class="l-gnav-item-link">採用情報</a></li>
+					<li class="l-gnav-item nopc"><a href="https://www.omron.com/digital/product_text/" class="l-gnav-item-link">文字入力技術</a></li>
+
+				</ul>
+			</nav><!--l-gnav-->
+		<div class="l-gnav-item-lang nopc">
+				<button class="l-gnav-item-lang-button">
+					Language
+				</button>
+				<ul class="l-gnav-item-lang-list">
+					<li><a href="https://www.omron.com/digital/en/" class="l-gnav-item-lang-list-link">Global - English</a></li>
+					<li><a href="https://www.omron.com/digital/" class="l-gnav-item-lang-list-link l-gnav-item-lang-list-link-active">Japan - 日本語</a></li>
+				</ul>
+			</div>
+			<div class="l-header-buttons">
+				<a href="https://www.omron.com/digital/download/" class="l-header-btn-outline">資料ダウンロード</a>
+				<a href="https://www.omron.co.jp/contact/ContactForm.do?FID=01022" class="l-header-btn-primary" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+			</div><!--l-header-buttons-->
+		</div><!--l-header-area-->
+		<button class="l-menu nopc">
+			<span class="l-menu-icon"></span>
+		</button>
+
+	</div><!--l-header-inner-->
+</header>
+
+
+    <div class="l-pagebody">
+      <div class="m-hero">
+        <div class="l-content m-hero-inner">
+
+        <h1 class="m-jp-title">LightMES</h1>
+        </div>
+
+        <nav class="l-breadcrumbs">
+          <ol itemscope="" itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="https://www.omron.com/digital/"><span itemprop="name">TOP</span></a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="https://www.omron.com/digital/service/"><span itemprop="name">主要製品・サービス</span></a>
+              <meta itemprop="position" content="2">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+
+              <a itemprop="item" href="https://www.omron.com/digital/service/category_detail/c_data/"><span itemprop="name">データ活用</span></a>
+
+              <meta itemprop="position" content="3">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="https://www.omron.com/digital/service/s_LightMES.html"><span itemprop="name">LightMES</span></a>
+              <meta itemprop="position" content="4">
+            </li>
+          </ol>
+        </nav>
+        <!-- l-breadcrumbs -->
+      </div>
+      <!-- m-hero -->
+
+      <div class="p-service-detail">
+
+      
+      
+      
+      
+      
+      
+      
+
+      
+        <div class="p-service-area">
+          <div class="l-content-ss">
+            <h2 class="p-service-area-ttl">
+            Lightな手間で経営と現場の距離を縮め<br>創造的なモノづくり現場を実現<br>
+            </h2>
+            <p class="p-service-area-txt">
+              LightMESは現場のデータを集約し、人に依存せず進捗を管理、そして改善につなげるサイクルを実現します<br>
+            </p>
+          </div>
+        </div>
+        <!-- p-service-area -->
+      
+
+      <div class="p-section-nav l-content-s">
+          <ul class="p-section-nav-list">
+            
+            <li>
+              <a href="https://www.omron.com/digital/service/s_LightMES.html#section1" class="p-section-nav-link is-pagelink">こんな方に<br class="nopc">おすすめ</a>
+            </li>
+            
+            
+            <li>
+              <a href="https://www.omron.com/digital/service/s_LightMES.html#section2" class="p-section-nav-link is-pagelink">サービス概要</a>
+            </li>
+            
+            
+            
+            <li>
+              <a href="https://www.omron.com/digital/service/s_LightMES.html#section4" class="p-section-nav-link is-pagelink">ご相談の流れ</a>
+            </li>
+            
+            
+            <li>
+              <a href="https://www.omron.com/digital/service/s_LightMES.html#section5" class="p-section-nav-link is-pagelink">よくある<br class="nopc">ご質問</a>
+            </li>
+            
+            
+            <li>
+              <a href="https://www.omron.com/digital/service/s_LightMES.html#section6" class="p-section-nav-link is-pagelink">関連資料</a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <section class="p-recommend l-content-ss" id="section1">
+          <h2 class="p-recommend-title">こんな方におすすめ</h2>
+          <ul class="p-recommend-list">
+            
+                <li class="p-recommend-item">工場の生産余力/ボトルネックを知りたい製造業経営者</li>
+            
+                <li class="p-recommend-item">ラインや工程の改善箇所を探したい工場エリア/ライン管理者</li>
+            
+                <li class="p-recommend-item">人作業の工程が遅れる原因を探求したい現場監督者</li>
+            
+                <li class="p-recommend-item">手軽でわかりやすい生産進捗管理システムを実現したい生産技術部門の皆さま</li>
+            
+                <li class="p-recommend-item">機器の付加価値向上をお考えの、生産設備/制御機器メーカの皆さま</li>
+            
+          </ul>
+        </section>
+        <!-- p-recommend -->
+
+
+
+        <section class="p-cms l-content-ss" id="section2">
+        <h2>サービス概要</h2>
+
+        <p><img alt="LightMES_1.png" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/LightMES_1.png" width="1318" height="376" class="mt-image-none" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><br><a href="https://www.omron.com/software/service/appdata/LightMES_logo.jpg"></a></p>
+<h3>LightMESで実現する製造現場革新</h3>
+<p>データを活用して生産と品質をより良く管理することができます。人に頼りすぎることなく、初期費用を抑えながら、迅速に機能を導入することが可能です。</p>
+<p>工場のライン/工程/製品ごとの生産データを経営陣と現場スタッフとでリアルタイムに共有することで、データに基づいた意思決定を行える環境を整えます。これにより、改善のスピードが加速し、継続的な成長と利益の拡大を支援します</p>
+<h4>生産性向上:</h4>
+<p>ラインや工程ごとの生産時間と進捗をリアルタイムで確認し、生産性の最大化が可能です。</p>
+<h4>品質向上:</h4>
+<p>工程毎の品質指標を監視し、品質変化の予測と分析を行うことで不良品を未然に防ぎます。</p>
+<h4>設備稼働率向上:</h4>
+<p>設備稼働率の向上を目指し、自動でデータを収集し、最適な稼動状態を維持するための課題を可視化します。</p>
+<h4>経営指標達成に向けたデータ活用:</h4>
+<p>各種設備からのデータ収集が可能、データを価値あるものに変換することで先手の製造現場管理に貢献します。</p>
+<p><img alt="LightMES_3.png" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/LightMES_3.png" width="1030" height="781" class="mt-image-none" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img alt="LightMES_4.png" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/LightMES_4.png" width="910" height="121" class="mt-image-none" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p></p>
+        </section>
+        <!-- p-cms -->
+
+
+
+
+        
+
+        <section class="p-flow" id="section4">
+          <div class="m-label">
+            <span class="m-label-box m-neue-regular">FLOW</span>
+            <h2 class="m-label-title">ご相談の流れ</h2>
+          </div>
+          <ol class="p-flow-list">
+        
+            <li class="p-flow-item">
+              
+              <div class="p-flow-step">
+                <span class="p-flow-step-number m-neue-regular">01</span>
+              <h3 class="p-flow-step-title">お問い合わせ</h3>
+              </div>
+              <p class="p-flow-step-text">
+                </p><p>お気軽にご相談内容をお伝えください。</p>
+              <p></p>
+            </li>
+
+      
+
+      
+            <li class="p-flow-item">
+              
+              <div class="p-flow-step">
+                <span class="p-flow-step-number m-neue-regular">02</span>
+              <h3 class="p-flow-step-title">ニーズのヒアリング</h3>
+              </div>
+              <p class="p-flow-step-text">
+                </p><p> 製造現場の課題をヒアリングします。</p>
+              <p></p>
+            </li>
+
+      
+
+      
+            <li class="p-flow-item">
+              
+              <div class="p-flow-step">
+                <span class="p-flow-step-number m-neue-regular">03</span>
+              <h3 class="p-flow-step-title">提案とお見積り</h3>
+              </div>
+              <p class="p-flow-step-text">
+                </p><p>最適なソリューションをご提案します。</p>
+              <p></p>
+            </li>
+
+      
+
+      
+            <li class="p-flow-item">
+              
+              <div class="p-flow-step">
+                <span class="p-flow-step-number m-neue-regular">04</span>
+              <h3 class="p-flow-step-title">導入とサポート</h3>
+              </div>
+              <p class="p-flow-step-text">
+                </p><p>スムーズな導入をサポートし、継続的な改善活動を支援します。</p>
+              <p></p>
+            </li>
+
+      
+          </ol>
+        </section>
+        <!-- p-flow -->
+      
+
+
+
+
+        
+
+        <section class="p-faq" id="section5">
+          <div class="l-content">
+            <div class="m-label">
+              <span class="m-label-box m-neue-regular">FAQ</span>
+              <h2 class="m-label-title">よくあるご質問</h2>
+            </div>
+            <dl class="p-faq-list">
+            
+              <div class="p-faq-item is-open">
+                <dt class="p-faq-question">
+                  <span class="p-faq-label m-neue-regular">Q</span>
+                  <span class="p-faq-text">LightMESはどのようなデータを提供しますか？</span>
+                </dt>
+                <dd class="is-faq-answer" style="display: block;">
+                  <div class="p-faq-answer">
+                    <span class="p-faq-label-answer m-neue-regular">A</span>
+                    <span class="p-faq-text-answer"><p>生産計画に対する出来高、ライン/工程ごとの生産効率を示す指標、設備稼働状況、品質バラつきを可視化してご提供いたします。</p></span>
+                  </div>
+                </dd>
+              </div>
+          
+              <div class="p-faq-item">
+                <dt class="p-faq-question">
+                  <span class="p-faq-label m-neue-regular">Q</span>
+                  <span class="p-faq-text">導入までにどれくらいの時間がかかりますか？</span>
+                </dt>
+                <dd class="is-faq-answer">
+                  <div class="p-faq-answer">
+                    <span class="p-faq-label-answer m-neue-regular">A</span>
+                    <span class="p-faq-text-answer"><p>お客様の現場条件によりますが、最短で着工から5ヵ月程度必要です。</p></span>
+                  </div>
+                </dd>
+              </div>
+          
+            </dl>
+          </div>
+        </section>
+        <!-- p-faq -->
+
+
+        <section class="p-download" id="section6">
+          <div class="l-content">
+            <div class="m-label">
+              <span class="m-label-box m-neue-regular">DOWNLOAD</span>
+              <h2 class="m-label-title">関連資料ダウンロード</h2>
+            </div>
+            <div class="m-list slider">
+  
+    
+    
+    
+    
+
+    
+      
+              
+      
+    
+  
+    
+    
+    
+    
+
+    
+      
+              
+      
+    
+  
+            <a href="https://www.omron.com/digital/download/all.html" class="m-card m-card-bg-blue" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="">
+              
+              
+                
+                  
+                
+              
+                <div class="m-card-image">
+                  <img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/catalog_odc.png" alt="ソリューション総合カタログ" width="340" height="210" loading="lazy" decoding="async">
+                </div>
+                <div class="m-card-body">
+                  <p class="m-card-title">
+                    ソリューション総合カタログ
+                  </p>
+                  <p class="m-card-txt">オムロン デジタルが提供する価値やサービス・商材を一覧化した資料です。サービスの利用シ...</p>
+                </div>
+              </a><a href="https://www.omron.com/digital/download/LightMES.html" class="m-card m-card-bg-blue" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="">
+              
+              
+                
+                  
+                
+              
+                <div class="m-card-image">
+                  <img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/catalog02.png" alt="LightMES" width="340" height="210" loading="lazy" decoding="async">
+                </div>
+                <div class="m-card-body">
+                  <p class="m-card-title">
+                    LightMES
+                  </p>
+                  <p class="m-card-txt">
+                    Lightな手間で経営と現場の距離を縮め、創造的なモノづくり現場を実現
+                  </p>
+                </div>
+              </a></div>
+            <div class="p-download-button">
+            <a href="https://www.omron.com/digital/download/" class="m-button">
+                <span class="m-button-txt">その他資料はこちら</span>
+                <span class="m-button-icn"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- p-download -->
+
+
+
+        
+
+        
+
+        <section class="p-related">
+          <div class="l-content">
+            <div class="m-label">
+              <span class="m-label-box m-neue-regular">RELATED SERVICES</span>
+              <h2 class="m-label-title">関連サービス</h2>
+            </div>
+            <div class="p-related-link">
+              <ul class="p-related-link-list">
+
+  
+    
+    
+    
+    
+    
+    
+            
+          
+                <li>
+                <a href="https://www.omron.com/digital/service/s_management.html" class="p-related-link-item">設備稼働管理システム</a>
+                </li>
+              
+    
+    
+  
+    
+    
+    
+    
+    
+    
+            
+          
+                <li>
+                <a href="https://www.omron.com/digital/service/s_wcs.html" class="p-related-link-item">倉庫内AGV/AMR 統合管理・制御システム（WCS）</a>
+                </li>
+              
+    
+    
+  
+    
+    
+    
+    
+    
+    
+            
+          
+                <li>
+                <a href="https://www.omron.com/digital/service/neutral.html" class="p-related-link-item">カーボンニュートラル簡易計測サービス</a>
+                </li>
+              
+    
+    
+  
+    
+    
+    
+    
+    
+    
+            
+          
+    
+    
+  
+    
+    
+    
+    
+    
+    
+            
+          
+                <li>
+                <a href="https://www.omron.com/digital/service/it.html" class="p-related-link-item">IT診断</a>
+                </li>
+              
+    
+    
+  
+    
+    
+    
+    
+    
+    
+            
+          
+                <li>
+                <a href="https://www.omron.com/digital/service/s_security.html" class="p-related-link-item">セキュリティ診断</a>
+                </li>
+              
+    
+    
+  
+    
+    
+    
+    
+    
+    
+            
+          
+                <li>
+                <a href="https://www.omron.com/digital/service/s_ai.html" class="p-related-link-item">生成AIサービス</a>
+                </li>
+              
+    
+    
+  
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- p-related -->
+
+
+      </div>
+      <!-- p-service-detail -->
+    </div>
+    <!-- l-pagebody -->
+
+<footer class="l-footer">
+	<div class="l-footer-contact">
+		<div class="l-footer-contact-inner l-content-s">
+			<div class="l-footer-contact-header">
+				<p class="l-footer-contact-header-text">製品・サービスに関する<br class="nopc">ご相談や質問など、お気軽に<br class="nopc">お問い合わせください</p>
+			</div>
+			<div class="l-footer-contact-body">
+				<div class="l-footer-contact-column">
+					<p class="l-footer-contact-text">会社の総合カタログや、<br>各種製品・サービスの資料を<br>ダウンロードできます。</p>
+					<div class="l-footer-contact-button">
+						<a href="https://www.omron.com/digital/download/" class="l-footer-contact-button-link l-footer-contact-button-download">
+							資料ダウンロード
+						</a>
+					</div>
+				</div>
+
+				<div class="l-footer-contact-column">
+					<p class="l-footer-contact-text">製品・サービスに関する<br>お問い合わせや、<br class="nopc">その他ご相談事項など、<br>お気軽にお問い合わせください。</p>
+					<div class="l-footer-contact-button">
+						<a href="https://www.omron.co.jp/contact/ContactForm.do?FID=01022" class="l-footer-contact-button-link l-footer-contact-button-inquiry" target="_blank" rel="noopener noreferrer">
+							相談・お問い合わせ
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div><!-- l-footer-contact -->
+
+
+	<div class="l-footer-inner">
+		<div class="l-content">
+			<div class="l-footer-box">
+				<div class="l-footer-logo">
+					<a href="https://www.omron.com/digital/"><img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/logo.svg" alt="オムロン デジタル株式会社 | Japan" width="372" height="23" loading="lazy" decoding="async"></a>
+
+				</div>
+				<nav class="l-footer-nav">
+					<ul class="l-footer-nav-list">
+						<li class="l-footer-nav-item l-footer-nav-item-01"><a href="https://www.omron.com/digital/service/">製品・サービス</a></li>
+						<li class="l-footer-nav-item l-footer-nav-item-02"><a href="https://www.omron.com/digital/company_info/">会社情報</a></li>
+						<li class="l-footer-nav-item l-footer-nav-item-07"><a href="https://www.omron.com/digital/business/">事業紹介</a></li>
+						<li class="l-footer-nav-item l-footer-nav-item-04"><a href="https://www.omron.com/digital/vision/">ビジョン</a></li>
+						<!-- <li class="l-footer-nav-item l-footer-nav-item-05"><a href="/digital/seminar/">セミナー</a></li>
+
+						<li class="l-footer-nav-item l-footer-nav-item-07"><a href="/digital/work/">導入事例</a></li>
+						<li class="l-footer-nav-item l-footer-nav-item-08"><a href="/digital/column/">コラム</a></li> -->
+						<li class="l-footer-nav-item l-footer-nav-item-05"><a href="https://www.omron.com/digital/recruit/">採用情報</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class="l-footer-bottom">
+				<p class="l-footer-logo-x">
+					<a href="https://x.com/omron_digital" target="_blank" rel="noopener noreferrer"><img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/icn_x.svg" alt="Xアイコン" width="44" height="44" loading="lazy" decoding="async"></a>
+				</p>
+
+				<div class="l-footer-policy-wrapper">
+					<a href="https://www.omron.com/jp/ja/" class="l-footer-policy">OMRON Corporate</a>
+					<a href="https://www.omron.com/digital/privacy/" class="l-footer-policy">個人情報の取り扱いについて</a>
+					<a href="https://www.omron.com/digital/terms/" class="l-footer-policy">当サイトのご利用にあたって</a>
+					<a href="https://www.omron.com/digital/cookiepolicy/" class="l-footer-policy">クッキー等の利用について</a>
+				</div>
+				<p class="l-footer-copy">© OMRON DIGITAL Co., Ltd. <br class="nopc">All Rights Reserved.</p>
+			</div>
+		</div>
+
+	</div><!-- l-footer-inner -->
+
+
+
+
+	<div class="l-pagetop" style="display: none;">
+		<p><a class="is-pagelink" href="https://www.omron.com/digital/service/s_LightMES.html#pagetop"><img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/btn_pagetop.svg" alt="ページの最上部へ戻るボタン " width="60" height="60" loading="lazy" decoding="async" class="is-imghover"></a></p>
+	</div><!--l-pagetop-->
+
+	<div class="l-footer-btn nopc" style="display: none;">
+		<a href="https://www.omron.co.jp/contact/ContactForm.do?FID=01022" class="l-footer-btn-link" target="_blank" rel="noopener noreferrer">
+			<img src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/btn_contact_sp.png" alt="お問い合わせボタン " width="158" height="46" class="is-imghover">
+		</a>
+	</div>
+</footer><!-- l-footer -->
+
+<!-- ページ共通のJSファイル開始-->
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/jquery-3.6.0.min.js"></script><script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g+"?ref\x3dgtm2";d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","qwpw6kh1i1");</script>
+<script id="hs-script-loader" text="" charset="" type="text/javascript" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/39759793(1).js"></script>
+
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/gsap.min.js"></script>
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/ScrollTrigger.min.js"></script>
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/common.js"></script>
+<!-- ページ共通のJSファイル終了-->
+
+
+<!-- ページ固有のJSファイル開始-->
+
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/slick.min.js"></script>
+
+<script src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/service.js"></script>
+<!-- ページ固有のJSファイル終了-->
+
+
+
+
+
+<iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;" src="./LightMES（製造実行システム） ｜オムロン デジタル株式会社_files/saved_resource.html"></iframe><div class="l-gnav-overlay" style="display: none;"></div></body></html>
