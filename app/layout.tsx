@@ -17,9 +17,9 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "LightMES（製造実行システム） ｜オムロン デジタル株式会社",
+  title: "ARCHAIVE（AI図面検索・見積プラットフォーム） ｜ STAR UP株式会社",
   description:
-    "製造現場のデータ活用を通じ、経営目標達成に向けた効率的な製造管理システムを提供。生産と品質をより良く管理し、迅速な機能導入で継続的成長を支援します。",
+    "製造業DXを実現するAI図面検索・見積プラットフォーム。1枚の図面から社内の全ナレッジをAI活用。設計・調達・見積業務を独自のAIエージェントがサポートします。",
 };
 
 export default function RootLayout({
