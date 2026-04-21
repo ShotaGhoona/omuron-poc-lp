@@ -161,9 +161,12 @@ function Hero() {
       {/* タイトル */}
       <div className="max-w-[1200px] mx-auto py-[80px] md:py-[100px] md:pb-[80px] px-5 md:px-0">
         <h1 className="text-[27px] md:text-[46px] font-bold tracking-[0.06em] leading-[1.4] relative pb-[20px] md:pb-[20px]">
-          ARCHAIVE
+          AI図面検索
           <span className="absolute bottom-0 left-0 w-[60px] md:w-[80px] h-[3px] md:h-[4px] bg-omron-blue" />
         </h1>
+        <p className="mt-[20px] md:mt-[30px] text-[18px] md:text-[24px] font-bold tracking-[0.06em] leading-[1.5]">
+          図面起点のAIデータプラットフォーム「ARCHAIVE」
+        </p>
       </div>
     </div>
   );
@@ -176,14 +179,8 @@ function ServiceArea() {
   return (
     <div id="about" className="bg-omron-light py-[40px] md:py-[80px]">
       <div className="max-w-[1000px] mx-auto px-5 md:px-0">
-        <h2 className="text-[24px] md:text-[35px] font-bold leading-[1.5] tracking-[0.06em] text-center mb-[20px] md:mb-[30px]">
-          1枚の図面から社内の全ナレッジを
-          <br />
-          AI活用する時代へ
-        </h2>
-        <p className="text-[16px] md:text-[18px] leading-[1.78] tracking-[0.06em] text-center">
-          ARCHAIVEは点在したデータや暗黙知を繋ぎ合わせ、<br className="nosp" />
-          設計・調達・見積業務をラクにする製造業AIデータハブです
+        <p className="text-[16px] md:text-[18px] leading-[1.78] tracking-[0.06em]">
+          製造現場では、図面・見積・仕様・検査記録・判断の経緯といった情報が、部門やファイル形式ごとに分散していることが少なくありません。ARCHAIVEは、AI図面検索を起点に、それらの情報を一つの基盤に集約し、検索・参照・AIでの活用までを可能にする、製造業のためのAIデータ基盤です。
         </p>
       </div>
     </div>
@@ -197,7 +194,7 @@ function SectionNav() {
   const navItems = [
     { href: "#section1", label: "こんな方に", labelSp: "おすすめ" },
     { href: "#section2", label: "サービス概要", labelSp: "" },
-    { href: "#section4", label: "ご導入の流れ", labelSp: "" },
+    { href: "#section4", label: "ご相談の流れ", labelSp: "" },
     { href: "#section5", label: "よくある", labelSp: "ご質問" },
     { href: "#section6", label: "関連資料", labelSp: "" },
   ];
@@ -230,11 +227,11 @@ function SectionNav() {
    ============================================================ */
 function Recommend() {
   const items = [
-    "過去の図面や見積を探すのに時間がかかっている設計・調達部門の方",
-    "属人化した技術ナレッジの共有・継承に課題を感じている製造業の経営者",
-    "既存のファイルサーバーやERPのデータ活用に限界を感じている情報システム部門の方",
-    "AI導入を検討しているが、自社データのセキュリティが不安な生産技術部門の方",
-    "図面管理の効率化・デジタル化を進めたい品質管理部門の方",
+    "図面探しに時間を取られている設計・開発部門の責任者",
+    "図面起点で最適なサプライヤーと適正価格を即断したい調達・購買担当者",
+    "情報のサイロ化を解消したい製造業の経営者・DX推進担当",
+    "技術継承・ノウハウ蓄積に課題を抱える工場長・生産技術部門の管理者",
+    "独自業務に合わせたAI活用を検討する製造設備／部品メーカーの事業責任者",
   ];
 
   return (
@@ -316,52 +313,82 @@ function ServiceOverview() {
       />
 
       <h3 className="text-[24px] md:text-[28px] font-bold border-l-[3px] border-omron-blue pl-5 mb-5 leading-[1.71] tracking-[0.06em]">
-        ARCHAIVEで実現する製造業DX
+        ARCHAIVEが生まれた理由
       </h3>
 
       <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
-        ARCHAIVEは、PLM・ERP・紙書類・ファイルサーバー・暗黙知など、あらゆるデータソースを統合する製造業AIデータハブです。独自のAIエージェントが設計・調達・見積業務を自動化し、社内に眠るナレッジを誰でも活用できる環境を実現します。
+        製造業の現場には、数十年分の経験と判断が蓄積されています。材質の選定理由、外注先への信頼、過去の失敗と改善。しかしそのほとんどは、担当者の記憶か、バラバラなフォルダの中に眠ったままです。
       </p>
       <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
-        初期費用を抑えたSaaS導入から始められ、段階的にカスタマイズ開発へ拡張可能。標準機能による即効性と、オーダーメイド開発による独自性を両立し、製造現場の競争力を高めます。
+        ARCHAIVEは、図面管理ソフトではありません。図面を起点に、製品にまつわるすべての情報を蓄積し、AIが活用できる状態をつくる、製造業の情報基盤です。大企業がPLMで実現してきた情報の一元管理を、中小〜中堅製造業の現場でも、段階的に構築できます。
+      </p>
+      <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
+        そして、ARCHAIVEをつくっているのは、AI開発を専門とする技術チームです。データを溜めるだけでなく、溜めたデータをAIで活用するところまで、設計思想として組み込んでいます。
       </p>
 
-      {/* 3つの特徴 */}
+      {/* サービスラインナップ画像 */}
       <img
         src="/images/archaive/LP2.png"
-        alt="アーカイブの特徴 — 高精度AI解析・類似図面AI検索・社内ナレッジ検索"
+        alt="ARCHAIVE サービスラインナップ"
         className="w-full max-w-[1000px] h-auto mx-auto mt-10 mb-10 block"
       />
 
-      <h4 className="text-[20px] md:text-[24px] font-bold text-omron-blue mt-[40px] mb-5 leading-[2] tracking-[0.06em]">
-        「探す」から「話す」へ。社内データが3秒で見つかる
-      </h4>
-      <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
-        AIに自然な言葉で質問するだけで、見積・過去トラ・仕様書などを瞬時に要約・検索。ファイル名が整理されていなくても、図面の「中身」からAI-OCRが自動でテキスト化し、必要な情報を即座に発見します。
+      <h3 className="text-[24px] md:text-[28px] font-bold border-l-[3px] border-omron-blue pl-5 mb-5 leading-[1.71] tracking-[0.06em]">
+        サービスラインナップ
+      </h3>
+      <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-[30px]">
+        製造業の情報基盤を段階的に構築いただけるよう、中核機能から導入支援・個別開発まで、サービスを体系化してご提供しています。
       </p>
 
-      <h4 className="text-[20px] md:text-[24px] font-bold text-omron-blue mt-[40px] mb-5 leading-[2] tracking-[0.06em]">
-        図面が自動で解析、登録作業ゼロに
+      <h4 className="text-[20px] md:text-[22px] font-bold mt-[40px] mb-5 tracking-[0.06em]">
+        中核機能
       </h4>
+
+      <h5 className="text-[18px] md:text-[20px] font-bold text-omron-blue mt-[30px] mb-3 leading-[1.5] tracking-[0.06em]">
+        ◾ AI図面検索・データ統合
+      </h5>
       <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
-        図面をアップロードするだけで自動データ化。形状や文字から類似図面を2秒で検索できます。図面自動解析・類似図面検索・部分図面検索により、設計業務の効率を飛躍的に向上させます。
+        図面・仕様書・見積・検査記録をARCHAIVE上に集約。AI-OCRによる自動データ化と、類似図面検索により、必要な情報へ短時間でアクセスできる環境を整備します。
       </p>
 
-      <h4 className="text-[20px] md:text-[24px] font-bold text-omron-blue mt-[40px] mb-5 leading-[2] tracking-[0.06em]">
-        オーダーメイドAIの開発
-      </h4>
+      <h5 className="text-[18px] md:text-[20px] font-bold text-omron-blue mt-[30px] mb-3 leading-[1.5] tracking-[0.06em]">
+        ◾ 部品構成管理・バージョン管理
+      </h5>
       <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
-        シンボル抽出AI・検図AI・BOM管理など、貴社独自の強みを活かした専用AIを開発。標準SaaSでは解決できない業務課題に対応し、競合優位性を確保します。
+        図面間の親子関係、設変履歴、バージョン差分を自動管理。「最新はどれか」「何が変わったか」を、確認の往復なく把握できます。
       </p>
 
-      <h4 className="text-[20px] md:text-[24px] font-bold text-omron-blue mt-[40px] mb-5 leading-[2] tracking-[0.06em]">
-        チャット型データ検索
-      </h4>
+      <h5 className="text-[18px] md:text-[20px] font-bold text-omron-blue mt-[30px] mb-3 leading-[1.5] tracking-[0.06em]">
+        ◾ 案件・書類管理
+      </h5>
       <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
-        「厚さ5mmのSUS304を使ったブラケット図面は？」といった自然な対話でデータを検索。専門知識がなくても、誰でも社内ナレッジにアクセスできます。
+        設計・製造・調達・品質の各部門が、同じ情報基盤で動ける環境を実現。案件ごとに関連図面・見積・やり取りを紐付け、部門間の情報ギャップを解消します。
       </p>
 
-      {/* 機能詳細画像が追加される場合はここに配置 */}
+      <h5 className="text-[18px] md:text-[20px] font-bold text-omron-blue mt-[30px] mb-3 leading-[1.5] tracking-[0.06em]">
+        ◾ AIエージェント
+      </h5>
+      <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
+        蓄積データをもとに、見積の参考値算出・類似事例の自動提示・検査支援などをAIが自動化。データを溜めた先の活用まで、お客様と伴走します。
+      </p>
+
+      <h4 className="text-[20px] md:text-[22px] font-bold mt-[50px] mb-5 tracking-[0.06em]">
+        導入支援メニュー
+      </h4>
+
+      <h5 className="text-[18px] md:text-[20px] font-bold text-omron-blue mt-[30px] mb-3 leading-[1.5] tracking-[0.06em]">
+        ◾ PoC伴走支援
+      </h5>
+      <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
+        導入前の検証段階から、AI開発を専門とする技術チームが伴走。貴社固有の図面・業務フローに合わせた検証設計から、効果測定までをサポートします。
+      </p>
+
+      <h5 className="text-[18px] md:text-[20px] font-bold text-omron-blue mt-[30px] mb-3 leading-[1.5] tracking-[0.06em]">
+        ◾ ARCHAIVE+（個別開発・カスタマイズ）
+      </h5>
+      <p className="text-[16px] leading-[1.81] tracking-[0.06em] mb-5">
+        標準機能で蓄積されたデータをベースに、貴社専用のAIエージェントを開発。見積自動化・品質検査支援など、個社の課題に特化したAI活用までを、技術チームが設計・実装いたします。
+      </p>
     </section>
   );
 }
@@ -373,20 +400,26 @@ function Flow() {
   const steps = [
     {
       number: "01",
-      title: "SaaS導入",
-      text: "標準機能で即効果。導入即日から効果を実感でき、学習コストはゼロです。",
+      title: "お問合せ",
+      text: "貴社の図面・情報管理の現状、抱えていらっしゃる課題をお気軽にお伝えください。",
       colorClass: "text-[#9DB2E3]",
     },
     {
       number: "02",
-      title: "既存システム連携",
-      text: "ERP・生産管理システムと連携し、データの分断を解消。既存投資を活用でき、移行リスクはゼロです。",
-      colorClass: "text-[#4C8EDF]",
+      title: "要件ヒアリング・現状分析",
+      text: "現在の運用・既存システム・解決したい課題を詳しくお聞きし、ARCHAIVEが適する領域を提案するための情報を整理します。",
+      colorClass: "text-[#6FA1E1]",
     },
     {
       number: "03",
-      title: "カスタマイズ開発",
-      text: "貴社独自の強みを活かした専用機能を開発。完全オーダーメイドで競合優位性を確保します。",
+      title: "ソリューション検討とご提案",
+      text: "標準導入プラン、PoC伴走プラン、個別開発プラン（ARCHAIVE+）から、貴社に最適な組合せをご提案します。",
+      colorClass: "text-[#4C8EDF]",
+    },
+    {
+      number: "04",
+      title: "導入・運用支援",
+      text: "導入後も、既存システムとの連携・社員トレーニング・継続的な改善提案まで、伴走いたします。",
       colorClass: "text-[#627BBD]",
     },
   ];
@@ -398,13 +431,13 @@ function Flow() {
           FLOW
         </span>
         <h2 className="text-[24px] md:text-[35px] font-bold tracking-[0.06em] leading-[1.37]">
-          ご導入の流れ
+          ご相談の流れ
         </h2>
       </div>
 
-      <ol className="flex flex-col md:flex-row gap-[60px] md:gap-[40px] justify-center px-5 md:px-0 list-none">
+      <ol className="flex flex-col md:flex-row gap-[60px] md:gap-[30px] justify-center px-5 md:px-0 list-none">
         {steps.map((step, i) => (
-          <li key={step.number} className="flex-1 max-w-full md:max-w-[320px] relative">
+          <li key={step.number} className="flex-1 max-w-full md:max-w-[260px] relative">
             <div className="flex items-center mt-[10px]">
               <span
                 className={`font-display text-[38px] md:text-[48px] font-bold leading-[1.15] w-[40px] md:w-[55px] ${step.colorClass}`}
@@ -440,24 +473,20 @@ function FAQ() {
 
   const faqs = [
     {
-      q: "無料デモやトライアルで、実際の使い勝手を確認できますか？",
-      a: "弊社が用意しておりますデータによる無料デモに加え、貴社の実際の図面データを用いたトライアル利用（有償PoC）も実施しております。「自社の図面がどう整理されるか」をお試しいただけます。",
+      q: "図面管理ツールとの違いは何ですか？",
+      a: "図面の検索速度だけを目的としたツールとは、設計思想が異なります。ARCHAIVEは図面を起点に、見積・仕様・検査記録・判断の経緯までをひとつの基盤に集約し、AIで活用できる状態にします。「探す」だけでなく「蓄積し、活かす」ための情報基盤です。",
     },
     {
-      q: "過去データの移行サポートはありますか？",
-      a: "専任スタッフによるデータ移行サポートが可能です。既存のファイルサーバーからのデータ移行支援を行っておりますので、大量の図面がある場合でも最適な移行プランをご提案します。",
+      q: "既存のCADやERP・ファイルサーバーとの連携は可能ですか？",
+      a: "はい。API連携に対応しています。データを移行するのではなく、既存環境に接続する形でご利用いただくため、業務フローを変えずに導入できます。",
     },
     {
-      q: "図面は機密情報ですが、セキュリティ対策は万全ですか？",
-      a: "世界最高水準のセキュリティ基準を持つAWSを採用しています。通信の暗号化や詳細なアクセス権限設定機能も備え、官公庁や大手企業でも採用される管理体制で技術情報を安全に保護します。",
+      q: "セキュリティ水準を教えてください。",
+      a: "ISO 27001準拠。通信：TLS 1.3。保存データ：AES-256暗号化。インフラ：AWS東京リージョン。部署・役職別のアクセス権限管理を標準装備。セキュリティチェックシートへの個別回答も対応いたします。",
     },
     {
-      q: "専用ソフトのインストールは必要ですか？",
-      a: "インストール不要で、ブラウザさえあればどこでも利用可能です。パソコンはもちろん、タブレットやスマートフォンからも図面の閲覧・検索ができ、工場内や外出先など場所を選ばず最新の図面情報にアクセスできます。",
-    },
-    {
-      q: "ファイル名が整理されていなくても、AIで図面を探せますか？",
-      a: "はい、ファイル名に依存せず「中身」で検索可能です。AI-OCRが図面内の「図番」「品名」「材質」「顧客名」などを自動でテキスト化するため、記載情報さえ分かれば瞬時に検索・発見できます。",
+      q: "AIの精度や活用範囲はどこまでですか？",
+      a: "AI-OCRによる図面の自動データ化、類似図面の形状検索、差分検出、見積参考値の算出、AIエージェントによる社内データ横断検索に対応。蓄積データが増えるほどAIの精度と活用範囲が拡がる設計です。",
     },
   ];
 
@@ -469,7 +498,7 @@ function FAQ() {
             FAQ
           </span>
           <h2 className="text-[24px] md:text-[35px] font-bold tracking-[0.06em] leading-[1.37]">
-            よくあるご質問
+            導入検討でよくある論点
           </h2>
         </div>
 
@@ -512,12 +541,12 @@ function FAQ() {
 function Download() {
   const cards = [
     {
-      title: "ARCHAIVE サービス紹介資料",
-      text: "ARCHAIVEの機能概要・導入事例・料金体系をまとめたサービス紹介資料です。",
+      title: "ソリューション総合カタログ",
+      text: "オムロン デジタル共通のソリューション総合カタログです。",
     },
     {
-      title: "製造業AI活用ガイドブック",
-      text: "製造業におけるAI図面検索・ナレッジ活用の最新事例と導入ステップをご紹介します。",
+      title: "ARCHAIVE サービス紹介資料",
+      text: "ARCHAIVEの機能・料金・導入事例をまとめたサービス紹介資料です。",
     },
   ];
 
@@ -580,12 +609,12 @@ function Download() {
    ============================================================ */
 function RelatedServices() {
   const products = [
-    "ARCHAIVE 図面管理",
-    "ARCHAIVE 顧客管理",
-    "ARCHAIVE 帳票管理",
-    "ARCHAIVE AIエージェント",
-    "社内ナレッジ検索AI",
-    "データクレンジング",
+    "生成AIサービス（koto-Buddy）",
+    "データ活用基盤（データウェアハウス）",
+    "OCR（光学文字認識）",
+    "設備稼働管理システム",
+    "LightMES",
+    "BPR・MDM（ビジネスプロセス管理支援）",
   ];
 
   return (
@@ -593,10 +622,10 @@ function RelatedServices() {
       <div className="max-w-[1200px] mx-auto px-5 md:px-0">
         <div className="text-center mb-[30px] md:mb-[60px]">
           <span className="inline-block bg-omron-blue text-white px-5 py-[2px] rounded-full text-[16px] md:text-[20px] tracking-[0.06em] font-display mb-[10px]">
-            PRODUCTS
+            RELATED SERVICES
           </span>
           <h2 className="text-[24px] md:text-[35px] font-bold tracking-[0.06em] leading-[1.37]">
-            プロダクト一覧
+            関連サービス
           </h2>
         </div>
 
