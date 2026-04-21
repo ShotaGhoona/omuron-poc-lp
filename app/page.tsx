@@ -310,7 +310,7 @@ function ServiceOverview() {
 
       {/* サービス紹介画像 */}
       <img
-        src="/images/archaive/1.png"
+        src="/images/archaive/LP1.png"
         alt="ARCHAIVE サービス紹介資料"
         className="w-full max-w-[1000px] h-auto mx-auto mb-10 block"
       />
@@ -328,7 +328,7 @@ function ServiceOverview() {
 
       {/* 3つの特徴 */}
       <img
-        src="/images/archaive/13.png"
+        src="/images/archaive/LP2.png"
         alt="アーカイブの特徴 — 高精度AI解析・類似図面AI検索・社内ナレッジ検索"
         className="w-full max-w-[1000px] h-auto mx-auto mt-10 mb-10 block"
       />
